@@ -1,4 +1,9 @@
 export type RootStackParamList = {
-TelaInicial: undefined;
-TelaHome: undefined;
+    TelaInicial: undefined;
+    TelaLogin: undefined;
+    TelaCadastro: undefined;
+    TelaHome: undefined;
+    TelaDicas: undefined;
+    TelaChat: undefined;
+    TelaConfig: undefined;
 };

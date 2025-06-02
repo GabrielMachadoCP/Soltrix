@@ -17,6 +17,8 @@
 		0B819DC3D6914F6294D2E416 /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5865EE94C1704C9E8246F342 /* Orbitron-Medium.ttf */; };
 		A3EB5B9CFDDC408DAF8E40B4 /* Orbitron-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 701727FD928142A9A4228CFE /* Orbitron-Regular.ttf */; };
 		935FD78D857B43B89BE2C352 /* Orbitron-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2047E9EEC6C34B709393A47A /* Orbitron-SemiBold.ttf */; };
+		E19F27782F304B2F8BFBC8A9 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA7D803F6D054230BEFE918E /* Lato-Bold.ttf */; };
+		E89E102E58A0457396C99C0A /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ED54E1F04934C82ABDF2080 /* Lato-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5865EE94C1704C9E8246F342 /* Orbitron-Medium.ttf */ = {isa = PBXFileReference; name = "Orbitron-Medium.ttf"; path = "../src/assets/fonts/Orbitron-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		701727FD928142A9A4228CFE /* Orbitron-Regular.ttf */ = {isa = PBXFileReference; name = "Orbitron-Regular.ttf"; path = "../src/assets/fonts/Orbitron-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		2047E9EEC6C34B709393A47A /* Orbitron-SemiBold.ttf */ = {isa = PBXFileReference; name = "Orbitron-SemiBold.ttf"; path = "../src/assets/fonts/Orbitron-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA7D803F6D054230BEFE918E /* Lato-Bold.ttf */ = {isa = PBXFileReference; name = "Lato-Bold.ttf"; path = "../src/assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5ED54E1F04934C82ABDF2080 /* Lato-Regular.ttf */ = {isa = PBXFileReference; name = "Lato-Regular.ttf"; path = "../src/assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 				5865EE94C1704C9E8246F342 /* Orbitron-Medium.ttf */,
 				701727FD928142A9A4228CFE /* Orbitron-Regular.ttf */,
 				2047E9EEC6C34B709393A47A /* Orbitron-SemiBold.ttf */,
+				EA7D803F6D054230BEFE918E /* Lato-Bold.ttf */,
+				5ED54E1F04934C82ABDF2080 /* Lato-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -218,6 +224,8 @@
 				0B819DC3D6914F6294D2E416 /* Orbitron-Medium.ttf in Resources */,
 				A3EB5B9CFDDC408DAF8E40B4 /* Orbitron-Regular.ttf in Resources */,
 				935FD78D857B43B89BE2C352 /* Orbitron-SemiBold.ttf in Resources */,
+				E19F27782F304B2F8BFBC8A9 /* Lato-Bold.ttf in Resources */,
+				E89E102E58A0457396C99C0A /* Lato-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

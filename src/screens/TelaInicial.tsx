@@ -8,13 +8,11 @@ import {
   Image,
   TouchableOpacity,
   StyleSheet,
-  Dimensions,
 } from 'react-native';
 import { RootStackParamList } from '../types';
+import BotaoPadrao from '../components/BotaoPadrao';
 
-const { width } = Dimensions.get('window');
-
-export default function TelaLogin() {
+const Inicio = () => {
     const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
   return (
@@ -31,13 +29,11 @@ export default function TelaLogin() {
         </View>
 
         <View style={styles.bottomContainer}>
-            <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate("TelaHome")}>
-            <Text style={styles.loginButtonText}>FAZER LOGIN</Text>
-            </TouchableOpacity>
+            <BotaoPadrao onPress={() => navigation.navigate("TelaLogin")} titulo='FAZER LOGIN'></BotaoPadrao>
 
             <View style={styles.containerlogin}>
                 <Text style={styles.textLogin}>Não tem cadastro? </Text>
-                <TouchableOpacity onPress={() => navigation.navigate("TelaHome")}>
+                <TouchableOpacity onPress={() => navigation.navigate("TelaCadastro")}>
                     <Text style={styles.textoCadastro}>Cadastre-se!</Text>
                 </TouchableOpacity>
             </View>
@@ -52,7 +48,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#DADADA',
   },
   fundo: {
-    width: width,
+    width: '100%',
     height:'85%',
     borderBottomRightRadius: 90,
   },
@@ -89,6 +85,7 @@ const styles = StyleSheet.create({
   },
   textoCadastro: {
     color: '#FF8C42',
-    fontWeight: 'bold',
   },
 });
+
+export default Inicio
