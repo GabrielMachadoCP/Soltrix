@@ -35,10 +35,10 @@ export default function TelaLogin() {
             <Text style={styles.loginButtonText}>FAZER LOGIN</Text>
             </TouchableOpacity>
 
-            <View style={styles.signupContainer}>
-                <Text style={styles.signupText}>Não tem cadastro? </Text>
+            <View style={styles.containerlogin}>
+                <Text style={styles.textLogin}>Não tem cadastro? </Text>
                 <TouchableOpacity onPress={() => navigation.navigate("TelaHome")}>
-                    <Text style={styles.signupLink}>Cadastre-se!</Text>
+                    <Text style={styles.textoCadastro}>Cadastre-se!</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -49,7 +49,7 @@ export default function TelaLogin() {
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#DADADA',
   },
   fundo: {
     width: width,
@@ -58,9 +58,7 @@ const styles = StyleSheet.create({
   },
   logoWrapper: {
     position: 'absolute',
-    top: 0,
     right: 0,
-    alignItems: 'center',
   },
   logo: {
     width: 150,
@@ -71,7 +69,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   loginButton: {
-    backgroundColor: '#ff8000',
+    backgroundColor: '#FF6B00',
     borderRadius: 30,
     paddingVertical: 14,
     paddingHorizontal: 50,
@@ -80,17 +78,17 @@ const styles = StyleSheet.create({
   loginButtonText: {
     color: '#fff',
     fontSize: 16,
-    fontFamily: 'Orbitron-Regular',
+    fontFamily: 'Orbitron-Bold',
   },
-  signupContainer: {
+  containerlogin: {
     flexDirection: 'row',
     alignItems: 'center',
   },
-  signupText: {
-    color: '#000000',
+  textLogin: {
+    color: '#121212',
   },
-  signupLink: {
-    color: '#ff8000',
+  textoCadastro: {
+    color: '#FF8C42',
     fontWeight: 'bold',
   },
 });
