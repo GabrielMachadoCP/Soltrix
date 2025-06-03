@@ -1,4 +1,4 @@
-import { Image, ScrollView, StyleSheet, View } from "react-native"
+import { Image, StyleSheet, View } from "react-native"
 
 const Cabecalho = () => {
 return (

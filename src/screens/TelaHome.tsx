@@ -1,7 +1,14 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
+import Card from '../components/Card';
+import Noticia from '../components/Noticia';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../types';
 
 const Home = () => {
+    const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+
   return (
     <ScrollView style={styles.containerImage}>
       <Image source={require('../assets/img/energia.png')} style={styles.topImage} />
@@ -10,40 +17,25 @@ const Home = () => {
         <Text style={styles.titulo}>Bem vindo, User!</Text>
         <Text style={styles.texto}>Vamos cuidar de sua energia juntos</Text>
 
-        <View style={styles.noticias}>
-            <Text style={styles.noticiaTitulo}>ATENÇÃO! ALERTA EM SUA REGIÃO!</Text>
-            <Text style={styles.noticiaTexto}>
-            No dia 04/06/2025 está previsto uma falta de energia devido a uma possível tempestade em sua região...
-            </Text>
-        </View>
+        <Noticia titulo='ATENÇÃO! ALERTA EM SUA REGIÃO!' 
+        corpo={'No dia 04/06/2025 está previsto uma falta de energia devido a uma possível tempestade em sua região. '+ 
+        'Importante ressaltar de evitar sair de casa nesse dia e se proteja, prepare suas lanternas e evite sobrecarga na volta de energia!'}/>
 
-        <View style={styles.icones}>
-            {/* Aqui você pode criar botões individuais com ícones e texto */}
-            <IconCard icon="headphones" label="Falar com Sol" />
-            <IconCard icon="bar-chart" label="Previsão falta de energia" />
-            <IconCard icon="alert-triangle" label="Alertar falta de energia" />
-            <IconCard icon="info" label="Dicas" />
-            <IconCard icon="activity" label="Cálculo de prejuízos" />
-            <IconCard icon="clock" label="Tempo de interrupção" />
+        <View style={styles.containerCards}>
+            <Card titulo='Falar com Sol' source={require('../assets/img/customer-support.png')}/>
+            <Card titulo='Previsão falta de energia' source={require('../assets/img/forecasting.png')}/>
+            <Card titulo='Alertar falta de energia' source={require('../assets/img/warning.png')}/>
+            <Card titulo='Dicas' source={require('../assets/img/hints.png')} onPress={() => navigation.navigate("DicasHome")}/>
+            <Card titulo='Cálculo de prejuízos' source={require('../assets/img/accounting.png')}/>
+            <Card titulo='Tempo de interrupção' source={require('../assets/img/time-left.png')}/>
         </View>
+        
 
-        <View style={styles.noticias}>
-            <Text style={styles.noticiaTitulo}>Dica da Sol</Text>
-            <Text style={styles.noticiaTexto}>
-            Oi, User! Sabia que desligar aparelhos em standby pode economizar até 12% da energia da sua casa?
-            </Text>
-        </View>
+        <Noticia titulo='Dica da Sol' 
+        corpo='Oi, User! Sabia que desligar aparelhos em standby pode economizar até 12% da energia da sua casa?'/>
       </View>
       
     </ScrollView>
-  );
-}
-
-function IconCard({ icon, label }: { icon: string; label: string }) {
-  return (
-    <View style={styles.card}>
-      <Text style={styles.cardText}>{label}</Text>
-    </View>
   );
 }
 
@@ -70,43 +62,11 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginBottom: 12,
   },
-  noticias: {
-    backgroundColor: '#F97316',
-    padding: 12,
-    borderRadius: 10,
-    marginBottom: 12,
-  },
-  noticiaTitulo: {
-    color: '#000',
-    fontWeight: 'bold',
-    marginBottom: 4,
-  },
-  noticiaTexto: {
-    color: '#000',
-    fontSize: 13,
-  },
-  icones: {
+  containerCards: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-between',
-    gap: 14,
-    marginVertical: 10,
-  },
-  card: {
-    width: 100,
-    height: 90,
-    backgroundColor: '#0C1B2C',
-    borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 8,
-  },
-  cardText: {
-    color: '#F97316',
-    fontSize: 11,
-    textAlign: 'center',
-    marginTop: 4,
-  },
+  }
 });
 
 

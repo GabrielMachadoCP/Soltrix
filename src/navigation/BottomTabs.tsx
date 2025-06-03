@@ -1,9 +1,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Image } from 'react-native';
-
 import Home from '../screens/TelaHome';
-import Dicas from '../screens/TelaDicas';
+import Dicas from '../screens/Dicas/DicasHome';
 import Chat from '../screens/TelaChat';
 import Config from '../screens/TelaConfig';
 
@@ -40,7 +39,7 @@ const Tabs =() => {
         }}
       />
       <Tab.Screen
-        name="TelaDicas"
+        name="DicasHome"
         component={Dicas}
         options={{
             tabBarIcon: () => (

@@ -3,7 +3,7 @@ export type RootStackParamList = {
     TelaLogin: undefined;
     TelaCadastro: undefined;
     TelaHome: undefined;
-    TelaDicas: undefined;
+    DicasHome: undefined;
     TelaChat: undefined;
     TelaConfig: undefined;
 };
