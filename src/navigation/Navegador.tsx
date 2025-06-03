@@ -6,6 +6,9 @@ import Tabs from './BottomTabs';
 import Inicio from '../screens/TelaInicial';
 import Login from '../screens/TelaLogin';
 import Cadastro from '../screens/TelaCadastro';
+import DicaPreparo from '../screens/Dicas/DicaPreparo';
+import DicaDurante from '../screens/Dicas/DicaDurante';
+import DicaApos from '../screens/Dicas/DicaApos';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +20,9 @@ const AppNavigator = () => {
         <Stack.Screen name="TelaLogin" component={Login} />
         <Stack.Screen name="TelaCadastro" component={Cadastro} />
         <Stack.Screen name="TelaHome" component={Tabs}/>
+        <Stack.Screen name="DicaPreparo" component={DicaPreparo}/>
+        <Stack.Screen name="DicaDurante" component={DicaDurante}/>
+        <Stack.Screen name="DicaApos" component={DicaApos}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

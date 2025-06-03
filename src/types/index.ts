@@ -4,6 +4,9 @@ export type RootStackParamList = {
     TelaCadastro: undefined;
     TelaHome: undefined;
     DicasHome: undefined;
+    DicaPreparo:undefined;
+    DicaDurante:undefined;
+    DicaApos: undefined;
     TelaChat: undefined;
     TelaConfig: undefined;
 };
